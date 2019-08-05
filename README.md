@@ -11,9 +11,9 @@ springBoot框架之前的学习整理，看了网上的介绍感觉springboot会
 
 内容：
 
-SpringBoot学习日记一（创建springBoot项目+输出helloword）  ： https://blog.csdn.net/LDSWAN0/article/details/94167548
+SpringBoot学习日记一（创建springBoot项目+输出helloword）  ：https://blog.csdn.net/LDSWAN0/article/details/94167548
 
-SpringBoot学习日记二（整合mysql+mybatis实现前后台完全分离网站登录功能） ： https://blog.csdn.net/LDSWAN0/article/details/94168479
+SpringBoot学习日记二（整合mysql+mybatis实现前后台完全分离网站登录功能） ：https://blog.csdn.net/LDSWAN0/article/details/94168479
 
 SpringBoot学习日记三（整合mybatis使用传统的SqlSessionTemplate来实现通用Dao操作）：https://blog.csdn.net/LDSWAN0/article/details/94170363
 
