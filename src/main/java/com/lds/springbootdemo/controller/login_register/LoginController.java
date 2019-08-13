@@ -1,7 +1,6 @@
 package com.lds.springbootdemo.controller.login_register;
 
-import com.lds.springbootdemo.aop.AnnotationAOP;
-import com.lds.springbootdemo.service.login_register.LoginService;
+import com.lds.springbootdemo.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

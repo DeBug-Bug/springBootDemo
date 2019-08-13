@@ -1,15 +1,15 @@
-package com.lds.springbootdemo.service.login_register;
+package com.lds.springbootdemo.service.impl;
 
-import com.lds.springbootdemo.aop.AnnotationAOP;
 import com.lds.springbootdemo.dao.DaoSupport;
 import com.lds.springbootdemo.domain.sbd_user;
-import com.lds.springbootdemo.mapper.sbd_userMapper;
+import com.lds.springbootdemo.service.LoginService;
+import com.lds.springbootdemo.service.RedisCacheService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
  * @program: springbootdemo
- * @description:
+ * @description: 登录验证Service
  * @author:
  * @createData:
  * @updateAuthor:
@@ -19,7 +19,6 @@ import org.springframework.stereotype.Service;
  * @email: lidongshenglife@163.com
  * @blog: www.b0c0.com
  */
-
 @Service
 public class LoginServiceImpl implements LoginService {
 
@@ -27,10 +26,12 @@ public class LoginServiceImpl implements LoginService {
     //private sbd_userMapper userMapper;
     @Autowired
     private DaoSupport dao;
-    /**
-     * 登录验证Service
-     * @return
-     */
+
+    @Autowired
+    private RedisCacheService redisCacheService;
+
+    public LoginServiceImpl(){redisCacheService.setHK("LOGIN");};
+
     @Override
     //@AnnotationAOP(name = "loginValidate")
     public boolean loginValidate(String account,String password) {

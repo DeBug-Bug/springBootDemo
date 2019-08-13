@@ -1,4 +1,4 @@
-package com.lds.springbootdemo.service.login_register;
+package com.lds.springbootdemo.service;
 
 
 /**

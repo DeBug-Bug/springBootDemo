@@ -52,7 +52,7 @@ public class TestAspect {
 //     * 后置通知（目标方法只要执行完了就会执行后置通知方法,不管是否出现异常） 执行顺序：2
 //     * @param joinPoint
 //     */
-//    @After("execution(* com.lds.springbootdemo.service.login_register.LoginServiceImpl.loginValidate(..))")
+//    @After("execution(* LoginServiceImpl.loginValidate(..))")
 //    public void after(JoinPoint joinPoint){
 //        MethodSignature signature = (MethodSignature) joinPoint.getSignature();
 //        Method method = signature.getMethod();
@@ -79,7 +79,7 @@ public class TestAspect {
      * @return
      */
     //@Around("annotationPoinCut()") ProceedingJoinPoint是子类，只能用在@Around中
-    @Around("execution(* com.lds.springbootdemo.service.login_register.LoginServiceImpl.loginValidate(..))")
+    @Around("execution(* com.lds.springbootdemo.service.impl.LoginServiceImpl.loginValidate(..))")
     public Object invoke(ProceedingJoinPoint joinPoint) {
         //.这里获取到所有的参数值的数组
         Object[] parameterValues = joinPoint.getArgs();
