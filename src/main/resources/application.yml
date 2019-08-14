@@ -1,48 +1,54 @@
 server:
-  #¶Ë¿Ú
-  port: 8084
+  #ç«¯å£
+  port: 8080
   servlet:
-    #ÉèÖÃÏîÄ¿·ÃÎÊÃû³Æ
+    #è®¾ç½®é¡¹ç›®è®¿é—®åç§°
     context-path: /springBootDemo
 spring:
-  thymeleaf:
-    #½ûÓÃthymeleafµÄ»º´æ
-    cache: false
-  devtools:
-    restart:
-      #ÈÈ²¿ÊğÉúĞ§
-      enabled: true
-      #ÉèÖÃÖØÆôµÄÄ¿Â¼,Ìí¼ÓÄÇ¸öÄ¿Â¼µÄÎÄ¼şĞèÒªrestart
-      additional-paths: src/main/java
-      exclude: templates/**
   datasource:
     druid:
       driver-class-name: ${driverClass}
       url: ${url}
       username: ${user}
       password: ${password}
-      # ³õÊ¼»¯´óĞ¡£¬×îĞ¡£¬×î´ó
+      # åˆå§‹åŒ–å¤§å°ï¼Œæœ€å°ï¼Œæœ€å¤§
       initial-size: 3
       min-idle: 3
-      max-active: 20
-      # ÅäÖÃ»ñÈ¡Á¬½ÓµÈ´ı³¬Ê±µÄÊ±¼ä
+      max-active: 10
+      # é…ç½®è·å–è¿æ¥ç­‰å¾…è¶…æ—¶çš„æ—¶é—´
       max-wait: 60000
-      # ÅäÖÃ¼ä¸ô¶à¾Ã²Å½øĞĞÒ»´Î¼ì²â£¬¼ì²âĞèÒª¹Ø±ÕµÄ¿ÕÏĞÁ¬½Ó£¬µ¥Î»ÊÇºÁÃë
+      # é…ç½®é—´éš”å¤šä¹…æ‰è¿›è¡Œä¸€æ¬¡æ£€æµ‹ï¼Œæ£€æµ‹éœ€è¦å…³é—­çš„ç©ºé—²è¿æ¥ï¼Œå•ä½æ˜¯æ¯«ç§’
       time-between-eviction-runs-millis: 60000
-      # ÅäÖÃÒ»¸öÁ¬½ÓÔÚ³ØÖĞ×îĞ¡Éú´æµÄÊ±¼ä£¬µ¥Î»ÊÇºÁÃë
-      min-evictable-idle-time-millis: 300000
-
-      validation-query: select 1
+      # é…ç½®ä¸€ä¸ªè¿æ¥åœ¨æ± ä¸­æœ€å°ç”Ÿå­˜çš„æ—¶é—´ï¼Œå•ä½æ˜¯æ¯«ç§’
+      min-evictable-idle-time-millis: 200000
+      validation-query: select
       test-while-idle: true
       test-on-borrow: false
       test-on-return: false
   redis:
     host: www.b0c0.com
     port: 6379
+    #æ²¡æœ‰å¯†ç åˆ™ç•™ç©º
     password: password
     timeout: 5000
+    lettuce:
+      pool:
+        max-active: 10
+        max-idle: 8
+        min-idle: 0
+        max-wait: 100
+  thymeleaf:
+    #ç¦ç”¨thymeleafçš„ç¼“å­˜
+    cache: false
+  devtools:
+    restart:
+      #çƒ­éƒ¨ç½²ç”Ÿæ•ˆ
+      enabled: true
+      #è®¾ç½®é‡å¯çš„ç›®å½•,æ·»åŠ é‚£ä¸ªç›®å½•çš„æ–‡ä»¶éœ€è¦restart
+      additional-paths: src/main/java
+      exclude: templates/**
 mybatis:
-    #ÉèÖÃ±ğÃû£¬ÔÚmapper.xmlÖĞ¿ÉÖ±½ÓĞ´ÀàÃû¼´¿É£¬²»±ØÔÙĞ´com.lds.springbootdemo.domain
-    type-aliases-package: com.lds.springbootdemo.domain
-    #mybatisµÄmapperÓ³ÉäÂ·¾¶
-    mapper-locations: classpath:mybatis/mapper/*.xml
+  #è®¾ç½®åˆ«åï¼Œåœ¨mapper.xmlä¸­å¯ç›´æ¥å†™ç±»åå³å¯ï¼Œä¸å¿…å†å†™com.lds.springbootdemo.domain
+  type-aliases-package: com.lds.springbootdemo.domain
+  #mybatisçš„mapperæ˜ å°„è·¯å¾„
+  mapper-locations: classpath:mybatis/mapper/*.xml

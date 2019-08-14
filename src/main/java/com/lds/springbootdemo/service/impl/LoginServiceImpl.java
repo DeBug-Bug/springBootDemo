@@ -30,8 +30,6 @@ public class LoginServiceImpl implements LoginService {
     @Autowired
     private RedisCacheService redisCacheService;
 
-    public LoginServiceImpl(){redisCacheService.setHK("LOGIN");};
-
     @Override
     //@AnnotationAOP(name = "loginValidate")
     public boolean loginValidate(String account,String password) {
