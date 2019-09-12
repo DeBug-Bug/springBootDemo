@@ -18,7 +18,7 @@ public class RedisCacheServiceImplTest {
 
     @Test
     public void test(){
-        redisCacheService.put("test","666");
+        redisCacheService.put("test","666",500);
         System.out.println(redisCacheService.get("test"));
     }
 }

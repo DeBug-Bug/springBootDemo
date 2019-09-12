@@ -29,4 +29,6 @@ https://blog.csdn.net/LDSWAN0/article/details/94171704
 
 ##### 20190813: 增加使用druid连接池以及redis。
 
+##### 20190912: redis工具类调整、引入rocketMQ以及mq集群测试类,springboot定时器，线程池管理
+
 

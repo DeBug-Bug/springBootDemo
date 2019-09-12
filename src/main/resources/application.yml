@@ -27,9 +27,9 @@ spring:
       test-on-return: false
   redis:
     host: www.b0c0.com
-    port: 6379
+    port:
     #没有密码则留空
-    password: password
+    password:
     timeout: 5000
     lettuce:
       pool:
@@ -52,3 +52,6 @@ mybatis:
   type-aliases-package: com.lds.springbootdemo.domain
   #mybatis的mapper映射路径
   mapper-locations: classpath:mybatis/mapper/*.xml
+#项目用到的配置
+project:
+  rocketMQAddress: 172.245.135.221:9876;119.29.177.14:9876
