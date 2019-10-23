@@ -7,10 +7,10 @@ server:
 spring:
   datasource:
     druid:
-      driver-class-name: ${driverClass}
-      url: ${url}
-      username: ${user}
-      password: ${password}
+      driver-class-name: ${db_driverClass}
+      url: ${db_url}
+      username: ${db_user}
+      password: ${db_password}
       # 初始化大小，最小，最大
       initial-size: 3
       min-idle: 3
@@ -26,10 +26,10 @@ spring:
       test-on-borrow: false
       test-on-return: false
   redis:
-    host: www.b0c0.com
-    port:
+    host: ${redis_host}
+    port: ${redis_port}
     #没有密码则留空
-    password:
+    password: ${redis_password}
     timeout: 5000
     lettuce:
       pool:
