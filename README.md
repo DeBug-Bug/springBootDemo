@@ -42,8 +42,9 @@ https://www.b0c0.com/spring%e5%ae%9a%e6%97%b6%e4%bb%bb%e5%8a%a1%e8%ae%be%e7%bd%a
 
 ## 设计模式
 
-##### 20191110: test.designPatterns 设计模式具体例子（来自菜鸟教程）
-    package com.lds.springbootdemo.test.designPatterns
+##### 20191110: 设计模式具体例子（来自菜鸟教程）
+    抽象工厂模式  com.lds.springbootdemo.test.designPatterns.AbstractFactory
+    桥接模式    com.lds.springbootdemo.test.designPatterns.Bridge
 
 ## redis
 
