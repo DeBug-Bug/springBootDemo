@@ -1,0 +1,33 @@
+server:
+  #端口
+  port: 8080
+  servlet:
+    #设置项目访问名称
+    context-path: /springBootDemo
+
+spring:
+  application:
+    name: springbootdemo
+  cloud:
+    config:
+      discovery:
+        service-id: config_lds
+        enabled: true
+      profile: dev
+    #      uri: http://localhost:9902
+    application:
+      name: ${spring.application.name}
+eureka:
+  instance:
+    #每间隔1s，向服务端发送一次心跳，证明自己依然”存活“
+    lease-renewal-interval-in-seconds: 10
+    #告诉服务端，如果我2s之内没有给你发心跳，就代表我“死”了，将我踢出掉。
+    lease-expiration-duration-in-seconds: 22
+    #自定义服务注册名
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+  client:
+    serviceUrl:
+      #需要验证账号的的注册中心
+      defaultZone: http://account:password@localhost:port/eureka/
+      #不需要验证账号的的注册中心
+      #defaultZone: http://localhost:9901/eureka

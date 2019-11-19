@@ -1,6 +1,5 @@
-package com.lds.springbootdemo.service.impl;
+package com.lds.springbootdemo.redis;
 
-import com.lds.springbootdemo.service.RedisCacheService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

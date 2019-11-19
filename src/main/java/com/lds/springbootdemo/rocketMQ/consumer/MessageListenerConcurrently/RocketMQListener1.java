@@ -4,7 +4,7 @@ import com.aliyun.openservices.shade.com.alibaba.rocketmq.client.consumer.listen
 import com.aliyun.openservices.shade.com.alibaba.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
 import com.aliyun.openservices.shade.com.alibaba.rocketmq.client.consumer.listener.MessageListenerConcurrently;
 import com.aliyun.openservices.shade.com.alibaba.rocketmq.common.message.MessageExt;
-import com.lds.springbootdemo.service.RedisCacheService;
+import com.lds.springbootdemo.redis.RedisCacheService;
 
 import java.util.List;
 

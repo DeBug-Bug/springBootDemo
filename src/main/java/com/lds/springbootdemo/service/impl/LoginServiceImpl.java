@@ -3,7 +3,7 @@ package com.lds.springbootdemo.service.impl;
 import com.lds.springbootdemo.dao.DaoSupport;
 import com.lds.springbootdemo.domain.sbd_user;
 import com.lds.springbootdemo.service.LoginService;
-import com.lds.springbootdemo.service.RedisCacheService;
+import com.lds.springbootdemo.redis.RedisCacheService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,8 +22,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class LoginServiceImpl implements LoginService {
 
-    //@Autowired
-    //private sbd_userMapper userMapper;
+//    @Autowired
+//    private sbd_userMapper userMapper;
+
     @Autowired
     private DaoSupport dao;
 
@@ -34,10 +35,10 @@ public class LoginServiceImpl implements LoginService {
     //@AnnotationAOP(name = "loginValidate")
     public boolean loginValidate(String account,String password) {
         boolean retu=false;
-        //sbd_user em=userMapper.selectByAccount(account);
         sbd_user user= null;
         try {
             user = (sbd_user) dao.selectForOne("sbd_userMapper.selectByAccount",account);
+            //user = userMapper.selectByAccount(account);
         } catch (Exception e) {
             e.printStackTrace();
         }

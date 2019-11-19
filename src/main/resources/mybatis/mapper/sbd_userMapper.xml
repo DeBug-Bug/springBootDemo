@@ -11,7 +11,7 @@
     Id, Account, Password, Status
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
+    select
     <include refid="Base_Column_List" />
     from sbd_user
     where Id = #{id,jdbcType=INTEGER}
@@ -27,9 +27,9 @@
     where Id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.lds.springbootdemo.domain.sbd_user">
-    insert into sbd_user (Id, Account, Password, 
+    insert into sbd_user (Id, Account, Password,
       Status)
-    values (#{id,jdbcType=INTEGER}, #{account,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
+    values (#{id,jdbcType=INTEGER}, #{account,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
       #{status,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.lds.springbootdemo.domain.sbd_user">

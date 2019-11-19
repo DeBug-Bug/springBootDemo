@@ -3,7 +3,7 @@ package com.lds.springbootdemo.rocketMQ.consumer;
 import com.lds.springbootdemo.config.ProjectConfig;
 import com.lds.springbootdemo.rocketMQ.consumer.MessageListenerConcurrently.RocketMQConsumer1;
 import com.lds.springbootdemo.rocketMQ.consumer.MessageListenerConcurrently.RocketMQListener1;
-import com.lds.springbootdemo.service.RedisCacheService;
+import com.lds.springbootdemo.redis.RedisCacheService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -4,7 +4,6 @@ import com.lds.springbootdemo.domain.sbd_user;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
-//@Mapper
 public interface sbd_userMapper {
     int deleteByPrimaryKey(Integer id);
 
