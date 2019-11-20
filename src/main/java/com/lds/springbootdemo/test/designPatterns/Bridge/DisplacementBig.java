@@ -2,12 +2,12 @@ package com.lds.springbootdemo.test.designPatterns.Bridge;
 
 /**
  * @program: springbootdemo
- * @description: 画形状
+ * @description:
  * @author: lidongsheng
- * @createData: 2019-11-18 19:37
+ * @createData: 2019-11-20 18:28
  * @updateAuthor: lidongsheng
- * @updateData: 2019-11-18 19:37
- * @updateContent: 画形状
+ * @updateData: 2019-11-20 18:28
+ * @updateContent:
  * @Version: 1.0.0
  * @email: lidongshenglife@163.com
  * @blog: www.b0c0.com
@@ -16,13 +16,10 @@ package com.lds.springbootdemo.test.designPatterns.Bridge;
  * ************************************************
  */
 
-public abstract class Shape {
-
-    public Color color;
-
-    public void setColor(Color color) {
-        this.color = color;
+public class DisplacementBig extends Displacement {
+    @Override
+    public String dispose() {
+        //业务处理
+        return "大排量";
     }
-
-    public abstract void draw();
 }

@@ -1,15 +1,13 @@
 package com.lds.springbootdemo.test.designPatterns.Bridge;
 
-import com.lds.springbootdemo.test.designPatterns.Bridge.Shape;
-
 /**
  * @program: springbootdemo
- * @description: 正方形
+ * @description:
  * @author: lidongsheng
- * @createData: 2019-11-18 19:41
+ * @createData: 2019-11-20 18:31
  * @updateAuthor: lidongsheng
- * @updateData: 2019-11-18 19:41
- * @updateContent: 正方形
+ * @updateData: 2019-11-20 18:31
+ * @updateContent:
  * @Version: 1.0.0
  * @email: lidongshenglife@163.com
  * @blog: www.b0c0.com
@@ -18,10 +16,10 @@ import com.lds.springbootdemo.test.designPatterns.Bridge.Shape;
  * ************************************************
  */
 
-public class Square extends Shape {
-
+public class TransmissionManual extends Transmission {
     @Override
-    public void draw() {
-        color.bepaint("正方形");
+    public String dispose() {
+        //业务处理
+        return "手动挡";
     }
 }

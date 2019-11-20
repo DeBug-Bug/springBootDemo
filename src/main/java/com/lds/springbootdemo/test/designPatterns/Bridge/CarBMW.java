@@ -2,12 +2,12 @@ package com.lds.springbootdemo.test.designPatterns.Bridge;
 
 /**
  * @program: springbootdemo
- * @description: 颜色类
+ * @description:
  * @author: lidongsheng
- * @createData: 2019-11-18 19:39
+ * @createData: 2019-11-20 18:04
  * @updateAuthor: lidongsheng
- * @updateData: 2019-11-18 19:39
- * @updateContent: 颜色类
+ * @updateData: 2019-11-20 18:04
+ * @updateContent:
  * @Version: 1.0.0
  * @email: lidongshenglife@163.com
  * @blog: www.b0c0.com
@@ -16,6 +16,10 @@ package com.lds.springbootdemo.test.designPatterns.Bridge;
  * ************************************************
  */
 
-public interface Color {
-    void bepaint(String sharp);
+public class CarBMW extends AbstractCar {
+
+    @Override
+    public void run(int speed) {
+        System.out.printf("CarBMW init "+displacement.dispose()+transmission.dispose()+"--run: speend:"+speed);
+    }
 }
