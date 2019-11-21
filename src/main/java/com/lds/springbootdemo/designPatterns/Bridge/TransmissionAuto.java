@@ -1,12 +1,12 @@
-package com.lds.springbootdemo.test.designPatterns.Bridge;
+package com.lds.springbootdemo.designPatterns.Bridge;
 
 /**
  * @program: springbootdemo
  * @description:
  * @author: lidongsheng
- * @createData: 2019-11-20 18:36
+ * @createData: 2019-11-20 18:31
  * @updateAuthor: lidongsheng
- * @updateData: 2019-11-20 18:36
+ * @updateData: 2019-11-20 18:31
  * @updateContent:
  * @Version: 1.0.0
  * @email: lidongshenglife@163.com
@@ -16,9 +16,10 @@ package com.lds.springbootdemo.test.designPatterns.Bridge;
  * ************************************************
  */
 
-public class CarDF extends AbstractCar {
+public class TransmissionAuto extends Transmission {
     @Override
-    public void run(int speed) {
-        System.out.printf("CarDF init "+displacement.dispose()+transmission.dispose()+"--run: speend:"+speed);
+    public String dispose() {
+        //业务处理
+        return "自动挡";
     }
 }

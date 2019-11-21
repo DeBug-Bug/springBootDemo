@@ -1,13 +1,13 @@
-package com.lds.springbootdemo.test.designPatterns.AbstractFactory;
+package com.lds.springbootdemo.designPatterns.Bridge;
 
 /**
  * @program: springbootdemo
- * @description: 鼠标
+ * @description:
  * @author: lidongsheng
- * @createData: 2019-11-19 16:50
+ * @createData: 2019-11-20 18:28
  * @updateAuthor: lidongsheng
- * @updateData: 2019-11-19 16:50
- * @updateContent: 鼠标
+ * @updateData: 2019-11-20 18:28
+ * @updateContent:
  * @Version: 1.0.0
  * @email: lidongshenglife@163.com
  * @blog: www.b0c0.com
@@ -16,6 +16,10 @@ package com.lds.springbootdemo.test.designPatterns.AbstractFactory;
  * ************************************************
  */
 
-public interface Mouse {
-    void say();
+public class DisplacementMiddle extends Displacement {
+    @Override
+    public String dispose() {
+        //业务处理
+        return "中排量";
+    }
 }

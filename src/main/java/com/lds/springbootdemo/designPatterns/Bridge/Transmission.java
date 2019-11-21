@@ -1,13 +1,13 @@
-package com.lds.springbootdemo.test.designPatterns.AbstractFactory;
+package com.lds.springbootdemo.designPatterns.Bridge;
 
 /**
  * @program: springbootdemo
- * @description: 惠普键盘
+ * @description: 挡位
  * @author: lidongsheng
- * @createData: 2019-11-19 16:53
+ * @createData: 2019-11-20 18:04
  * @updateAuthor: lidongsheng
- * @updateData: 2019-11-19 16:53
- * @updateContent: 惠普键盘
+ * @updateData: 2019-11-20 18:04
+ * @updateContent: 挡位
  * @Version: 1.0.0
  * @email: lidongshenglife@163.com
  * @blog: www.b0c0.com
@@ -16,9 +16,7 @@ package com.lds.springbootdemo.test.designPatterns.AbstractFactory;
  * ************************************************
  */
 
-public class HPKeybo implements Keybo{
-    @Override
-    public void say() {
-        System.out.println("HPKeybo");
-    }
+public abstract class Transmission {
+
+    public abstract String dispose();
 }

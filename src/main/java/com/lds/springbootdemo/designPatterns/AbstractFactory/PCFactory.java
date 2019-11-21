@@ -1,4 +1,4 @@
-package com.lds.springbootdemo.test.designPatterns.AbstractFactory;
+package com.lds.springbootdemo.designPatterns.AbstractFactory;
 
 /**
  * @program: springbootdemo

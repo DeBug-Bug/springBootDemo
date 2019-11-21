@@ -1,13 +1,13 @@
-package com.lds.springbootdemo.test.designPatterns.AbstractFactory;
+package com.lds.springbootdemo.designPatterns.Bridge;
 
 /**
  * @program: springbootdemo
- * @description: 惠普鼠标
+ * @description:
  * @author: lidongsheng
- * @createData: 2019-11-19 16:51
+ * @createData: 2019-11-20 18:31
  * @updateAuthor: lidongsheng
- * @updateData: 2019-11-19 16:51
- * @updateContent: 惠普鼠标
+ * @updateData: 2019-11-20 18:31
+ * @updateContent:
  * @Version: 1.0.0
  * @email: lidongshenglife@163.com
  * @blog: www.b0c0.com
@@ -16,10 +16,10 @@ package com.lds.springbootdemo.test.designPatterns.AbstractFactory;
  * ************************************************
  */
 
-public class HPMouse implements Mouse{
-
+public class TransmissionManual extends Transmission {
     @Override
-    public void say() {
-        System.out.println("HPMouse");
+    public String dispose() {
+        //业务处理
+        return "手动挡";
     }
 }

@@ -1,13 +1,13 @@
-package com.lds.springbootdemo.test.designPatterns.Bridge;
+package com.lds.springbootdemo.designPatterns.Bridge;
 
 /**
  * @program: springbootdemo
- * @description: 挡位
+ * @description: 排量
  * @author: lidongsheng
- * @createData: 2019-11-20 18:04
+ * @createData: 2019-11-20 18:07
  * @updateAuthor: lidongsheng
- * @updateData: 2019-11-20 18:04
- * @updateContent: 挡位
+ * @updateData: 2019-11-20 18:07
+ * @updateContent: 排量
  * @Version: 1.0.0
  * @email: lidongshenglife@163.com
  * @blog: www.b0c0.com
@@ -16,7 +16,7 @@ package com.lds.springbootdemo.test.designPatterns.Bridge;
  * ************************************************
  */
 
-public abstract class Transmission {
+public abstract class Displacement {
 
     public abstract String dispose();
 }

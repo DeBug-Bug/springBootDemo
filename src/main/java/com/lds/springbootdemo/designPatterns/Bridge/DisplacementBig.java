@@ -1,12 +1,12 @@
-package com.lds.springbootdemo.test.designPatterns.Bridge;
+package com.lds.springbootdemo.designPatterns.Bridge;
 
 /**
  * @program: springbootdemo
  * @description:
  * @author: lidongsheng
- * @createData: 2019-11-20 18:04
+ * @createData: 2019-11-20 18:28
  * @updateAuthor: lidongsheng
- * @updateData: 2019-11-20 18:04
+ * @updateData: 2019-11-20 18:28
  * @updateContent:
  * @Version: 1.0.0
  * @email: lidongshenglife@163.com
@@ -16,10 +16,10 @@ package com.lds.springbootdemo.test.designPatterns.Bridge;
  * ************************************************
  */
 
-public class CarBMW extends AbstractCar {
-
+public class DisplacementBig extends Displacement {
     @Override
-    public void run(int speed) {
-        System.out.printf("CarBMW init "+displacement.dispose()+transmission.dispose()+"--run: speend:"+speed);
+    public String dispose() {
+        //业务处理
+        return "大排量";
     }
 }

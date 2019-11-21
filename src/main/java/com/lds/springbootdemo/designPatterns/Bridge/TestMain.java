@@ -1,4 +1,4 @@
-package com.lds.springbootdemo.test.designPatterns.Bridge;
+package com.lds.springbootdemo.designPatterns.Bridge;
 
 /**
  * @program: springbootdemo

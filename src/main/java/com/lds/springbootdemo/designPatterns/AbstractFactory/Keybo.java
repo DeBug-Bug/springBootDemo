@@ -1,13 +1,13 @@
-package com.lds.springbootdemo.test.designPatterns.Bridge;
+package com.lds.springbootdemo.designPatterns.AbstractFactory;
 
 /**
  * @program: springbootdemo
- * @description:
+ * @description: 键盘
  * @author: lidongsheng
- * @createData: 2019-11-20 18:29
+ * @createData: 2019-11-19 16:51
  * @updateAuthor: lidongsheng
- * @updateData: 2019-11-20 18:29
- * @updateContent:
+ * @updateData: 2019-11-19 16:51
+ * @updateContent: 键盘
  * @Version: 1.0.0
  * @email: lidongshenglife@163.com
  * @blog: www.b0c0.com
@@ -16,10 +16,6 @@ package com.lds.springbootdemo.test.designPatterns.Bridge;
  * ************************************************
  */
 
-public class DisplacementSmall extends Displacement {
-    @Override
-    public String dispose() {
-        //业务处理
-        return "小排量";
-    }
+public interface Keybo {
+    void say();
 }

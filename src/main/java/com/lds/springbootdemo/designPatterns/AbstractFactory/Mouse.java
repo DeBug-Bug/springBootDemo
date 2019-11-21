@@ -1,13 +1,13 @@
-package com.lds.springbootdemo.test.designPatterns.AbstractFactory;
+package com.lds.springbootdemo.designPatterns.AbstractFactory;
 
 /**
  * @program: springbootdemo
- * @description: 戴尔键盘
+ * @description: 鼠标
  * @author: lidongsheng
- * @createData: 2019-11-19 16:55
+ * @createData: 2019-11-19 16:50
  * @updateAuthor: lidongsheng
- * @updateData: 2019-11-19 16:55
- * @updateContent: 戴尔键盘
+ * @updateData: 2019-11-19 16:50
+ * @updateContent: 鼠标
  * @Version: 1.0.0
  * @email: lidongshenglife@163.com
  * @blog: www.b0c0.com
@@ -16,9 +16,6 @@ package com.lds.springbootdemo.test.designPatterns.AbstractFactory;
  * ************************************************
  */
 
-public class DellKeybo implements Keybo {
-    @Override
-    public void say() {
-        System.out.println("DellKeybo");
-    }
+public interface Mouse {
+    void say();
 }
