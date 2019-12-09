@@ -1,7 +1,10 @@
 package com.lds.springbootdemo.controller.login_register;
 
 import com.lds.springbootdemo.service.LoginService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -28,11 +31,13 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/login")
+@Api(tags = "登录接口")
 public class LoginController {
     //自动注入bean
     @Autowired
     private LoginService loginService;
-    @RequestMapping(value = "/loginValidate")
+    @GetMapping(value = "/loginValidate")
+    @ApiOperation(value="登录验证")
     public String loginValidate(String account,String password) {
         boolean validate=loginService.loginValidate(account, password);
         if(validate){

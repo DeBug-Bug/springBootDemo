@@ -2,6 +2,7 @@ package com.lds.springbootdemo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -29,7 +30,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/hello")
 public class HelloController {
-    @RequestMapping(value = "/sayHello")
+    @GetMapping(value = "/sayHello")
     public String sayHello(Model model) {
         model.addAttribute("data", "LDS的第一个spring boot项目说了helloWord！");
         //返回的视图名称

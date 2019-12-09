@@ -25,6 +25,8 @@ eureka:
     lease-expiration-duration-in-seconds: 22
     #自定义服务注册名
     instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+    status-page-url-path: /swagger-ui.html
+    hostname: localhost
   client:
     serviceUrl:
       #需要验证账号的的注册中心

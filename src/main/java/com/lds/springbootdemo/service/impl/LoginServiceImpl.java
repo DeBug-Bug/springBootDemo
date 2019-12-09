@@ -7,6 +7,8 @@ import com.lds.springbootdemo.redis.RedisCacheService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.PostConstruct;
+
 /**
  * @program: springbootdemo
  * @description: 登录验证Service
