@@ -60,4 +60,5 @@ https://www.b0c0.com/spring%e5%ae%9a%e6%97%b6%e4%bb%bb%e5%8a%a1%e8%ae%be%e7%bd%a
 
 ##### 20190813: 增加使用druid连接池以及redis。
 ##### 20190912: 引入rocketMQ以及mq集群测试类,线程池管理
+##### 20191209: 添加Swagger2（更方便的用来接口调试）,可通过注册中心的链接进入或者直接在项目后加/swagger-ui.html来进入
     package com.lds.springbootdemo.rocketMQ;
