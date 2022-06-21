@@ -55,7 +55,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.47</version>
+            <version>8.0.28</version>
         </dependency>
         <!-- 热部署 -->
         <!-- devtools可以实现页面热部署（即页面修改后会立即生效，
@@ -156,7 +156,7 @@
                     <dependency>
                         <groupId>mysql</groupId>
                         <artifactId>mysql-connector-java</artifactId>
-                        <version>5.1.47</version>
+                        <version>8.0.28</version>
                     </dependency>
                 </dependencies>
             </plugin>
